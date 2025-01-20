@@ -4,6 +4,7 @@
   "description": "",
   "repository": "github:thespielplatz/nuxt-dev-base",
   "license": "MIT",
+  "private": false,
   "type": "module",
   "exports": {
     ".": {
