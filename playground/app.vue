@@ -1,8 +1,15 @@
 <template>
-  <div>
-    Nuxt module playground!
-  </div>
+  <LayoutCenterContainer>
+    <div class="grid gap-2">
+      <div>
+        <TypographyHeadlineDefault>TypographyHeadlineDefault</TypographyHeadlineDefault>
+      </div>
+      <div>
+        <TypographyButtonDefault>x</TypographyButtonDefault>
+      </div>
+    </div>
+  </LayoutCenterContainer>
 </template>
 
-<script setup>
+<script setup lang="ts">
 </script>

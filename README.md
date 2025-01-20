@@ -26,6 +26,8 @@ Install the module to your Nuxt application with one command:
 npm i -D @thespielplatz/nuxt-dev-base
 ```
 
+Install tailwind for your project
+
 That's it! You can now use Nuxt Dev Base in your Nuxt app ✨
 
 ## Development
