@@ -2,18 +2,10 @@
 
 <!-- Badges Start -->
 <p>
-  <a href="https://npmjs.com/package/@thespielplatz/nuxt-dev-base">
-    <img src="https://img.shields.io/npm/v/@thespielplatz/nuxt-dev-base.svg?style=flat-square&colorA=202128&colorB=36936A" alt="Version">
-  </a>
-  <a href="https://npmjs.com/package/@thespielplatz/nuxt-dev-base">
-    <img src="https://img.shields.io/npm/dm/@thespielplatz/nuxt-dev-base.svg?style=flat-square&colorA=202128&colorB=36936A" alt="Downloads">
-  </a>
-  <a href="https://github.com/thespielplatz/nuxt-dev-base/stargazers">
-    <img src="https://img.shields.io/github/stars/thespielplatz/nuxt-dev-base.svg?style=flat-square&colorA=202128&colorB=36936A" alt="Stars">
-  </a>
-  <a href="https://github.com/thespielplatz/nuxt-dev-base/blob/main/LICENSE">
-    <img src="https://img.shields.io/github/license/thespielplatz/nuxt-dev-base.svg?style=flat-square&colorA=202128&colorB=36936A" alt="License">
-  </a>
+  <a href="https://npmjs.com/package/@thespielplatz/nuxt-dev-base"><img src="https://img.shields.io/npm/v/@thespielplatz/nuxt-dev-base.svg?style=flat-square&colorA=202128&colorB=36936A" alt="Version"></a>
+  <a href="https://npmjs.com/package/@thespielplatz/nuxt-dev-base"><img src="https://img.shields.io/npm/dm/@thespielplatz/nuxt-dev-base.svg?style=flat-square&colorA=202128&colorB=36936A" alt="Downloads"></a>
+  <a href="https://github.com/thespielplatz/nuxt-dev-base/stargazers"><img src="https://img.shields.io/github/stars/thespielplatz/nuxt-dev-base.svg?style=flat-square&colorA=202128&colorB=36936A" alt="Stars"></a>
+  <a href="https://github.com/thespielplatz/nuxt-dev-base/blob/main/LICENSE"><img src="https://img.shields.io/github/license/thespielplatz/nuxt-dev-base.svg?style=flat-square&colorA=202128&colorB=36936A" alt="License"></a>
 </p>
 <!-- Badges End -->
 
