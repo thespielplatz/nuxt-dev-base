@@ -1,9 +1,21 @@
 # Nuxt Dev Base
 
-[![npm version][npm-version-src]][npm-version-href]
-[![npm downloads][npm-downloads-src]][npm-downloads-href]
-[![License][license-src]][license-href]
-[![Nuxt][nuxt-src]][nuxt-href]
+<!-- Badges Start -->
+<p>
+  <a href="https://npmjs.com/package/@thespielplatz/nuxt-dev-base">
+    <img src="https://img.shields.io/npm/v/@thespielplatz/nuxt-dev-base.svg?style=flat-square&colorA=202128&colorB=36936A" alt="Version">
+  </a>
+  <a href="https://npmjs.com/package/@thespielplatz/nuxt-dev-base">
+    <img src="https://img.shields.io/npm/dm/@thespielplatz/nuxt-dev-base.svg?style=flat-square&colorA=202128&colorB=36936A" alt="Downloads">
+  </a>
+  <a href="https://github.com/thespielplatz/nuxt-dev-base/stargazers">
+    <img src="https://img.shields.io/github/stars/thespielplatz/nuxt-dev-base.svg?style=flat-square&colorA=202128&colorB=36936A" alt="Stars">
+  </a>
+  <a href="https://github.com/thespielplatz/nuxt-dev-base/blob/main/LICENSE">
+    <img src="https://img.shields.io/github/license/thespielplatz/nuxt-dev-base.svg?style=flat-square&colorA=202128&colorB=36936A" alt="License">
+  </a>
+</p>
+<!-- Badges End -->
 
 Development starter for doing amazing things.
 
@@ -24,15 +36,21 @@ npm i -D @thespielplatz/nuxt-dev-base
 
 That's it! You can now use Nuxt Dev Base in your Nuxt app ✨
 
-<!-- Badges -->
-[npm-version-src]: https://img.shields.io/npm/v/@thespielplatz/nuxt-dev-base/latest.svg?style=flat&colorA=020420&colorB=00DC82
-[npm-version-href]: https://npmjs.com/package/@thespielplatz/nuxt-dev-base
+## Development
 
-[npm-downloads-src]: https://img.shields.io/npm/dm/@thespielplatz/nuxt-dev-base.svg?style=flat&colorA=020420&colorB=00DC82
-[npm-downloads-href]: https://npm.chart.dev/@thespielplatz/nuxt-dev-base
+```sh
+npm run dev:prepare
+npm run dev
+```
 
-[license-src]: https://img.shields.io/npm/l/@thespielplatz/nuxt-dev-base.svg?style=flat&colorA=020420&colorB=00DC82
-[license-href]: https://npmjs.com/package/@thespielplatz/nuxt-dev-base
+Experiment with the module in the playground environment 🎉
 
-[nuxt-src]: https://img.shields.io/badge/Nuxt-020420?logo=nuxt.js
-[nuxt-href]: https://nuxt.com
+_(Inspired by the [Nuxt module guide](https://nuxt.com/docs/guide/going-further/modules))_
+
+## Support
+
+If you find this project helpful, please give it a star! ⭐
+
+If you love it, consider forking it and taking it out for dinner. 🌟🍽️
+
+[Tip the developer](https://thespielplatz.com/tip-jar) ❤️
