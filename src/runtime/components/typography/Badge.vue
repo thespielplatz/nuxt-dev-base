@@ -1,7 +1,7 @@
 <template>
   <div
     :class="[
-      'px-1.5 py-0.5 text-xs font-mono rounded-xl',
+      'px-1.5 py-0.5 text-xs font-mono rounded-xl inline',
       styleClass,
     ]"
   >

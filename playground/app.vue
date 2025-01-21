@@ -1,6 +1,6 @@
 <template>
   <LayoutCenterContainer>
-    <div class="grid gap-2">
+    <div class="flex flex-col gap-2">
       <div>
         <TypographyHeadlineDefault>Components</TypographyHeadlineDefault>
       </div>
@@ -8,7 +8,15 @@
         <TypographyHeadlineDefault>TypographyHeadlineDefault</TypographyHeadlineDefault>
       </div>
       <div>
-        <TypographyButtonDefault>x</TypographyButtonDefault>
+        <TypographyButtonDefault>TypographyButtonDefault</TypographyButtonDefault>
+      </div>
+      <div>
+        <TypographyButtonDefault disabled>Disabled TypographyButtonDefault</TypographyButtonDefault>
+      </div>
+      <div class="flex gap-2">
+        <TypographyBadge>TypographyBadge</TypographyBadge>
+        <TypographyBadge state="success">Success</TypographyBadge>
+        <TypographyBadge state="error">Error</TypographyBadge>
       </div>
     </div>
   </LayoutCenterContainer>
