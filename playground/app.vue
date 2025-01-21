@@ -2,6 +2,9 @@
   <LayoutCenterContainer>
     <div class="grid gap-2">
       <div>
+        <TypographyHeadlineDefault>Components</TypographyHeadlineDefault>
+      </div>
+      <div>
         <TypographyHeadlineDefault>TypographyHeadlineDefault</TypographyHeadlineDefault>
       </div>
       <div>
