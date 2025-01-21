@@ -18,6 +18,12 @@
         <TypographyBadge state="success">Success</TypographyBadge>
         <TypographyBadge state="error">Error</TypographyBadge>
       </div>
+      <div>
+        <TypographyInputDefault />
+      </div>
+      <div>
+        <TypographyInputDefault label="With Label" />
+      </div>
     </div>
   </LayoutCenterContainer>
 </template>
