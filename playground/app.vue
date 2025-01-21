@@ -2,27 +2,27 @@
   <LayoutCenterContainer>
     <div class="flex flex-col gap-2">
       <div>
-        <TypographyHeadlineDefault>Components</TypographyHeadlineDefault>
+        <UiHeadlineDefault>Components</UiHeadlineDefault>
       </div>
       <div>
-        <TypographyHeadlineDefault>TypographyHeadlineDefault</TypographyHeadlineDefault>
+        <UiHeadlineDefault>UiHeadlineDefault</UiHeadlineDefault>
       </div>
       <div>
-        <TypographyButtonDefault>TypographyButtonDefault</TypographyButtonDefault>
+        <UiButtonDefault>UiButtonDefault</UiButtonDefault>
       </div>
       <div>
-        <TypographyButtonDefault disabled>Disabled TypographyButtonDefault</TypographyButtonDefault>
+        <UiButtonDefault disabled>Disabled UiButtonDefault</UiButtonDefault>
       </div>
       <div class="flex gap-2">
-        <TypographyBadge>TypographyBadge</TypographyBadge>
-        <TypographyBadge state="success">Success</TypographyBadge>
-        <TypographyBadge state="error">Error</TypographyBadge>
+        <UiBadge>UiBadge</UiBadge>
+        <UiBadge state="success">Success</UiBadge>
+        <UiBadge state="error">Error</UiBadge>
       </div>
       <div>
-        <TypographyInputDefault />
+        <UiInputDefault />
       </div>
       <div>
-        <TypographyInputDefault label="With Label" />
+        <UiInputDefault label="With Label" />
       </div>
     </div>
   </LayoutCenterContainer>
