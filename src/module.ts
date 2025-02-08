@@ -1,7 +1,7 @@
 import { defineNuxtModule, addPlugin, createResolver, addComponentsDir } from '@nuxt/kit'
 import consola from 'consola'
 import '@nuxt/schema'
-import type { Nuxt } from 'nuxt/schema'
+import addPackageJsonToPublicConfig from './lib/addPackageJsonToPublicConfig'
 
 // Module options TypeScript interface definition
 // eslint-disable-next-line @typescript-eslint/no-empty-object-type
@@ -17,25 +17,20 @@ export default defineNuxtModule<ModuleOptions>({
   },
   // Default configuration options of the Nuxt module
   defaults,
-  setup(_options, _nuxt) {
+  setup(options, nuxt) {
     consola.info('Dev Base Module: Setup')
 
-    registerAll(_nuxt)
+    registerAll()
+    addPackageJsonToPublicConfig(nuxt)
   },
 })
 
-const registerAll = (nuxt: Nuxt) => {
+const registerAll = () => {
   const { resolve } = createResolver(import.meta.url)
   const runtimeDir = resolve('./runtime')
 
   addPlugin(resolve(runtimeDir, 'plugins/useLocalStorage'))
   addComponentsDir({
     path: resolve(runtimeDir, 'components'),
-  })
-  addComponentsDir({
-    path: resolve(runtimeDir, 'components', 'footer'),
-  })
-  addComponentsDir({
-    path: resolve(runtimeDir, 'components', 'typography'),
   })
 }
