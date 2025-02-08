@@ -55,6 +55,24 @@ watch(fooBar2, (value) => {
 
 ### Simple Footer with Gitversion
 
+You can use the `<FooterMain />`component to have an automatical footer in your project.
+
+Example `package.json`:
+
+```json
+{
+  "homepage": "https://github.com/thespielplatz/nuxt-dev-base",
+  "version": "0.0.1",
+  "meta": {
+    "special-version": "0.0.1-for-testing"
+  }
+}
+```
+
+* It reads the `version` field from the `package.json` and displays a bage
+* It reads the `meta.special-version` field from the `package.json` as an override for version badge
+* It reads the `homepage` field from the `package.json` and uses it as Github Link Icon and Version Bagde Link (to the Github Release page)
+
 ### Release Notes
 
 [✨ &nbsp;Release Notes](/CHANGELOG.md)
