@@ -11,13 +11,54 @@
 
 Development starter for doing amazing things.
 
-- [✨ &nbsp;Release Notes](/CHANGELOG.md)
-
 ## Features
+
+### Localstorage PLugin
+
+```typescript
+const localStorageText = ref('')
+const { $localStorage } = useNuxtApp()
+
+onMounted(() => {
+  localStorageText.value = $localStorage.getItem(LOCALSTORAGE_KEY) || ''
+})
+
+watch(localStorageText, (value) => {
+  $localStorage.setItem(LOCALSTORAGE_KEY, value)
+})
+```
+
+#### Local Storage created with prefix
+
+```typescript
+const FOOBAR_KEY_1 = 'fooBar1'
+const FOOBAR_KEY_2 = 'fooBar2'
+const fooBar1 = ref('')
+const fooBar2 = ref('')
+const { $localStorage } = useNuxtApp()
+const localStorageForFooBar = $localStorage.create('with-prefix')
+
+onMounted(() => {
+  fooBar1.value = localStorageForFooBar.getItem(FOOBAR_KEY_1) || ''
+  fooBar2.value = localStorageForFooBar.getItem(FOOBAR_KEY_2) || ''
+})
+
+watch(fooBar1, (value) => {
+  localStorageForFooBar.setItem(FOOBAR_KEY_1, value)
+})
+
+watch(fooBar2, (value) => {
+  localStorageForFooBar.setItem(FOOBAR_KEY_2, value)
+})
+
+```
+
+### Release Notes
+
+[✨ &nbsp;Release Notes](/CHANGELOG.md)
 
 ## Backlog
 
-- Localstorage Plugin with Use
 - Simple Footer with Gitversion
 
 ## Quick Setup
