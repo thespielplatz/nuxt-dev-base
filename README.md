@@ -15,8 +15,10 @@ Development starter for doing amazing things.
 
 ## Features
 
-- Simple Component Library
-- Footer with Gitversion
+## Backlog
+
+- Localstorage Plugin with Use
+- Simple Footer with Gitversion
 
 ## Quick Setup
 

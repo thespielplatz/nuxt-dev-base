@@ -32,4 +32,10 @@ const registerAll = (nuxt: Nuxt) => {
   addComponentsDir({
     path: resolve(runtimeDir, 'components'),
   })
+  addComponentsDir({
+    path: resolve(runtimeDir, 'components', 'footer'),
+  })
+  addComponentsDir({
+    path: resolve(runtimeDir, 'components', 'typography'),
+  })
 }
