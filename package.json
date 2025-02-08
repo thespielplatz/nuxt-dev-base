@@ -5,7 +5,7 @@
   "description": "Development base module for Nuxt",
   "repository": "github:thespielplatz/nuxt-dev-base",
   "license": "MIT",
-  "private": false,
+  "private": true,
   "type": "module",
   "meta": {
     "special-version": "0.0.1-for-testing"
