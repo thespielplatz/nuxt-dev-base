@@ -73,6 +73,49 @@ Example `package.json`:
 * It reads the `meta.special-version` field from the `package.json` as an override for version badge
 * It reads the `homepage` field from the `package.json` and uses it as Github Link Icon and Version Bagde Link (to the Github Release page)
 
+#### Configuration of Docker Build
+
+```Docker
+WORKDIR /app
+COPY package.json /app
+```
+
+#### Configuration of Github Actions
+
+```yml
+name: Run pipeline if commit has contains 'RUN_PIPELINE'
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  docker:
+    if: |
+      contains(github.event.head_commit.message, 'RUN_PIPELINE')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4.2.2
+        
+      - name: Extract version from package.json & short commit hash & check for RUN_PIPELINE in commit message
+        id: extract_version
+        run: |
+          VERSION=$(jq -r '.version' package.json)
+          SHORT_HASH=$(git rev-parse --short HEAD)
+          if echo "${{ github.event.head_commit.message }}" | grep -q "RUN_PIPELINE"; then
+            echo "version=${VERSION}.${SHORT_HASH}" >> $GITHUB_OUTPUT
+          else
+            echo "version=${VERSION}" >> $GITHUB_OUTPUT
+          fi
+
+      - name: if RUN_PIPELINE, add special-version to package.json
+        run: |
+          if echo "${{ github.event.head_commit.message }}" | grep -q "RUN_PIPELINE"; then
+            jq '.meta["special-version"] = "${{ steps.extract_version.outputs.version }}"' package.json > package.tmp.json && mv package.tmp.json package.json
+          fi          
+```
+
 ### Release Notes
 
 [✨ &nbsp;Release Notes](/CHANGELOG.md)
