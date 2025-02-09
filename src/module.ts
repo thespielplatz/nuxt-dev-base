@@ -2,6 +2,7 @@ import { defineNuxtModule, addPlugin, createResolver, addComponentsDir } from '@
 import consola from 'consola'
 import '@nuxt/schema'
 import addPackageJsonToPublicConfig from './lib/addPackageJsonToPublicConfig'
+import { addConsolaPrefix } from './lib/addConsolaPrefix'
 
 // Module options TypeScript interface definition
 // eslint-disable-next-line @typescript-eslint/no-empty-object-type
@@ -18,7 +19,7 @@ export default defineNuxtModule<ModuleOptions>({
   // Default configuration options of the Nuxt module
   defaults,
   setup(options, nuxt) {
-    consola.info('Dev Base Module: Setup')
+    consola.info(addConsolaPrefix('Setup'))
 
     registerAll()
     addPackageJsonToPublicConfig(nuxt)

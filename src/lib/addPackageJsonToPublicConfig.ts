@@ -4,6 +4,7 @@ import type { Nuxt } from 'nuxt/schema'
 import defu from 'defu'
 import consola from 'consola'
 import { z } from 'zod'
+import { addConsolaPrefix } from './addConsolaPrefix'
 
 const packageJsonSchema = z.object({
   version: z.string().default('no version'),
@@ -20,7 +21,7 @@ export default (nuxt: Nuxt) => {
   try {
     packageJsonContent = readFileSync(packageJsonPath, 'utf-8')
   } catch {
-    consola.error('Error loading package.json from path:', packageJsonPath)
+    consola.warn(addConsolaPrefix('Error loading package.json from path:'), packageJsonPath)
     return
   }
 
@@ -29,7 +30,7 @@ export default (nuxt: Nuxt) => {
     const json = JSON.parse(packageJsonContent)
     packageJson = packageJsonSchema.parse(json)
   } catch (error) {
-    consola.error('Error parsing package.json:', error)
+    consola.warn(addConsolaPrefix('Error parsing package.json:'), error)
     return
   }
 
@@ -38,4 +39,5 @@ export default (nuxt: Nuxt) => {
     version: packageJson.meta?.['special-version'] || packageJson.version,
     githubLink: packageJson.homepage || '',
   })
+  consola.info(addConsolaPrefix('Loaded infos from package.json'))
 }
