@@ -1,7 +1,7 @@
 {
   "name": "@thespielplatz/nuxt-dev-base",
   "homepage": "https://github.com/thespielplatz/nuxt-dev-base",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Development base module for Nuxt",
   "repository": "github:thespielplatz/nuxt-dev-base",
   "license": "MIT",
