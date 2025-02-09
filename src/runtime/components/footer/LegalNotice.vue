@@ -1,11 +1,12 @@
 <template>
   <UButton
-    v-if="legalNoticeContent != null"
+    v-if="content != null"
     variant="link"
     @click="isOpen = true"
   >
     Legal Notice
   </UButton>
+  <slot v-if="content" />
   <UModal v-model="isOpen">
     <UCard :ui="{ ring: '', divide: 'divide-y divide-gray-100 dark:divide-gray-800' }">
       <template #header>
@@ -24,7 +25,7 @@
       </template>
       <template #default>
         <!-- eslint-disable-next-line vue/no-v-html -->
-        <div v-html="legalNoticeContent" />
+        <div v-html="content" />
       </template>
     </UCard>
   </UModal>
@@ -34,14 +35,14 @@
 
 import { onMounted } from 'vue'
 
-const legalNoticeContent = ref<null | string>(null)
+const content = ref<null | string>(null)
 const isOpen = ref(false)
 
 const runtimeConfig = useRuntimeConfig()
 
 onMounted(() => {
   if (runtimeConfig.public.legalNotice) {
-    legalNoticeContent.value = runtimeConfig.public.legalNotice
+    content.value = runtimeConfig.public.legalNotice
   }
 })
 

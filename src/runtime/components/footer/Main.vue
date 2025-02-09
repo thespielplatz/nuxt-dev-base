@@ -1,12 +1,18 @@
 <template>
   <UDivider class="mt-auto pt-2" />
   <UContainer class="w-full flex justify-end py-2 gap-">
-    <FooterLegalNotice v-if="legalNotice" />
-    <UDivider
-      v-if="legalNotice"
-      orientation="vertical"
-      class="h-7 mt-1"
-    />
+    <FooterLegalNotice>
+      <UDivider
+        orientation="vertical"
+        class="h-7 mt-1"
+      />
+    </FooterLegalNotice>
+    <FooterPrivacyPolicy>
+      <UDivider
+        orientation="vertical"
+        class="h-7 mt-1"
+      />
+    </FooterPrivacyPolicy>
     <FooterGithubLink v-if="githubLink" />
     <UDivider
       v-if="githubLink"
@@ -21,6 +27,5 @@
 
 const runtimeConfig = useRuntimeConfig()
 const githubLink = ref(runtimeConfig.public.githubLink || '')
-const legalNotice = ref(runtimeConfig.public.legalNotice || '')
 
 </script>
