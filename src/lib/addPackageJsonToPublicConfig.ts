@@ -16,23 +16,26 @@ const packageJsonSchema = z.object({
 export default (nuxt: Nuxt) => {
   const packageJsonPath = join(process.cwd(), 'package.json')
 
-  let packageJsonContent = ''
+  let packageJsonContent
   try {
     packageJsonContent = readFileSync(packageJsonPath, 'utf-8')
   } catch {
     consola.error('Error loading package.json from path:', packageJsonPath)
+    return
   }
 
+  let packageJson
   try {
     const json = JSON.parse(packageJsonContent)
-    const packageJson = packageJsonSchema.parse(json)
-
-    nuxt.options.runtimeConfig.public = defu(nuxt.options.runtimeConfig.public, {
-      releasedVersion: packageJson.version,
-      version: packageJson.meta?.['special-version'] || packageJson.version,
-      githubLink: packageJson.homepage || '',
-    })
+    packageJson = packageJsonSchema.parse(json)
   } catch (error) {
     consola.error('Error parsing package.json:', error)
+    return
   }
+
+  nuxt.options.runtimeConfig.public = defu(nuxt.options.runtimeConfig.public, {
+    releasedVersion: packageJson.version,
+    version: packageJson.meta?.['special-version'] || packageJson.version,
+    githubLink: packageJson.homepage || '',
+  })
 }
