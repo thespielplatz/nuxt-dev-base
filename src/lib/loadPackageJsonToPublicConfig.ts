@@ -1,5 +1,5 @@
 import { readFileSync } from 'node:fs'
-import { join } from 'node:path'
+import path from 'node:path'
 import consola from 'consola'
 import { z } from 'zod'
 import { addConsolaPrefix } from './addConsolaPrefix'
@@ -17,7 +17,7 @@ export default (): {
   version: string,
   githubLink: string,
 } => {
-  const packageJsonPath = join(process.cwd(), 'package.json')
+  const packageJsonPath = path.resolve(process.cwd(), 'package.json')
 
   let packageJsonContent
   try {

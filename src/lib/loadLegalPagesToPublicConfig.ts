@@ -18,11 +18,9 @@ const loadFile = (fileName: string, context: string) => {
   try {
     const fileContent = readFileSync(filePath, 'utf-8')
     consola.info(addConsolaPrefix(`${context} loaded from:`), filePath)
-    console.info(addConsolaPrefix(`${context} loaded from:`), filePath)
     return fileContent
   } catch {
     consola.warn(addConsolaPrefix(`Could not load ${context} from:`), filePath)
-    console.warn(addConsolaPrefix(`${context} loaded from:`), filePath)
     return ''
   }
 }
