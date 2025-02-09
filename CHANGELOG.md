@@ -1,6 +1,27 @@
 # Changelog
 
 
+## v0.0.3
+
+[compare changes](https://github.com/thespielplatz/nuxt-dev-base/compare/v0.0.2...v0.0.3)
+
+### 🩹 Fixes
+
+- Change consola warning ([afc5c72](https://github.com/thespielplatz/nuxt-dev-base/commit/afc5c72))
+- **nuxt:** Fixed import in module ([63da542](https://github.com/thespielplatz/nuxt-dev-base/commit/63da542))
+
+### 📖 Documentation
+
+- Move setup section to top ([cca0b47](https://github.com/thespielplatz/nuxt-dev-base/commit/cca0b47))
+
+### 🏡 Chore
+
+- Make package public ([e9de2f7](https://github.com/thespielplatz/nuxt-dev-base/commit/e9de2f7))
+
+### ❤️ Contributors
+
+- Thespielplatz <informatics@gmx.net>
+
 ## v0.0.2
 
 
