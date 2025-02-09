@@ -1,11 +1,11 @@
 import { defineNuxtModule, addPlugin, createResolver, addComponentsDir } from '@nuxt/kit'
 import consola from 'consola'
 import '@nuxt/schema'
-import loadPackageJsonToPublicConfig from './lib/loadPackageJsonToPublicConfig'
-import loadLegalNoticeToPublicConfig from './lib/loadLegalNoticeToPublicConfig'
-import { addConsolaPrefix } from './lib/addConsolaPrefix'
 import type { Nuxt } from '@nuxt/schema'
 import defu from 'defu'
+import loadPackageJsonToPublicConfig from './lib/loadPackageJsonToPublicConfig'
+import loadLegalPagesToPublicConfig from './lib/loadLegalPagesToPublicConfig'
+import { addConsolaPrefix } from './lib/addConsolaPrefix'
 
 // Module options TypeScript interface definition
 // eslint-disable-next-line @typescript-eslint/no-empty-object-type
@@ -41,11 +41,11 @@ const registerAll = () => {
 
 const addDataToPublicConfig = (nuxt: Nuxt) => {
   const packageJsonData = loadPackageJsonToPublicConfig()
-  const legalNoticeData = loadLegalNoticeToPublicConfig()
+  const legalPagesData = loadLegalPagesToPublicConfig()
 
   nuxt.options.runtimeConfig.public = defu(
     nuxt.options.runtimeConfig.public,
     packageJsonData,
-    legalNoticeData,
+    legalPagesData,
   )
 }
