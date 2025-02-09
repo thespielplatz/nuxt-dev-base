@@ -1,6 +1,16 @@
 # Changelog
 
 
+## v1.0.0
+
+[compare changes](https://github.com/thespielplatz/nuxt-dev-base/compare/v0.0.1...v1.0.0)
+
+### Features
+
+- Localstorage PLugin
+- Simple Footer with Gitversion
+- Legal Pages loaded from data
+
 ## v0.0.5
 
 [compare changes](https://github.com/thespielplatz/nuxt-dev-base/compare/v0.0.4...v0.0.5)
