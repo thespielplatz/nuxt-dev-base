@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v0.0.5
+
+[compare changes](https://github.com/thespielplatz/nuxt-dev-base/compare/v0.0.4...v0.0.5)
+
+### 🏡 Chore
+
+- Update vitest ([5c63abc](https://github.com/thespielplatz/nuxt-dev-base/commit/5c63abc))
+
+### ❤️ Contributors
+
+- Thespielplatz <informatics@gmx.net>
+
 ## v0.0.4
 
 [compare changes](https://github.com/thespielplatz/nuxt-dev-base/compare/v0.0.3...v0.0.4)
