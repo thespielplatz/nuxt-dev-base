@@ -11,6 +11,28 @@
 
 Development starter for doing amazing things.
 
+## Quick Setup
+
+Install the module to your Nuxt application with one command:
+
+```bash
+npm i -D @thespielplatz/nuxt-dev-base
+npx nuxi@latest module add ui
+```
+
+Edit Add it to the `modules` section in your `nuxt.config.ts`:
+
+```typescript
+export default defineNuxtConfig({
+  modules: [
+    '@thespielplatz/nuxt-dev-base',
+    '@nuxt/ui',
+  ],
+})
+```
+
+That's it! You can now use Nuxt Dev Base in your Nuxt app ✨
+
 ## Features
 
 ### Localstorage PLugin
@@ -131,29 +153,7 @@ FYI: You can easily mount the `/data` directory outside of your docker container
 
 ## Backlog
 
-- empty
-
-## Quick Setup
-
-Install the module to your Nuxt application with one command:
-
-```bash
-npm i -D @thespielplatz/nuxt-dev-base
-npx nuxi@latest module add ui
-```
-
-Edit Add it to the `modules` section in your `nuxt.config.ts`:
-
-```typescript
-export default defineNuxtConfig({
-  modules: [
-    '@thespielplatz/nuxt-dev-base',
-    '@nuxt/ui',
-  ],
-})
-```
-
-That's it! You can now use Nuxt Dev Base in your Nuxt app ✨
+* empty
 
 ## Development
 
