@@ -1,5 +1,5 @@
 import { readFileSync } from 'node:fs'
-import { join } from 'node:path'
+import path from 'node:path'
 import consola from 'consola'
 import { addConsolaPrefix } from './addConsolaPrefix'
 
@@ -14,13 +14,15 @@ export default (): {
 }
 
 const loadFile = (fileName: string, context: string) => {
-  const filePath = join(process.cwd(), 'data', fileName)
+  const filePath = path.resolve(process.cwd(), 'data', fileName)
   try {
     const fileContent = readFileSync(filePath, 'utf-8')
     consola.info(addConsolaPrefix(`${context} loaded from:`), filePath)
+    console.info(addConsolaPrefix(`${context} loaded from:`), filePath)
     return fileContent
   } catch {
     consola.warn(addConsolaPrefix(`Could not load ${context} from:`), filePath)
+    console.warn(addConsolaPrefix(`${context} loaded from:`), filePath)
     return ''
   }
 }
