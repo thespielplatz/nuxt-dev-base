@@ -1,6 +1,22 @@
 # Changelog
 
 
+## v1.0.2
+
+[compare changes](https://github.com/thespielplatz/nuxt-dev-base/compare/v1.0.1...v1.0.2)
+
+### 💅 Refactors
+
+- Use path.resolve i/o join ([99d1546](https://github.com/thespielplatz/nuxt-dev-base/commit/99d1546))
+
+### 🏡 Chore
+
+- Npm pkg fix ([38c9b3c](https://github.com/thespielplatz/nuxt-dev-base/commit/38c9b3c))
+
+### ❤️ Contributors
+
+- Thespielplatz <informatics@gmx.net>
+
 ## v1.0.1
 
 [compare changes](https://github.com/thespielplatz/nuxt-dev-base/compare/v0.0.5...v1.0.1)
