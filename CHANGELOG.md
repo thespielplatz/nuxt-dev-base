@@ -1,6 +1,19 @@
 # Changelog
 
 
+## v1.0.1
+
+[compare changes](https://github.com/thespielplatz/nuxt-dev-base/compare/v0.0.5...v1.0.1)
+
+### 🏡 Chore
+
+- **release:** V1.0.0 ([aef0170](https://github.com/thespielplatz/nuxt-dev-base/commit/aef0170))
+- Testing console & consola in a nuxt project ([db52c8a](https://github.com/thespielplatz/nuxt-dev-base/commit/db52c8a))
+
+### ❤️ Contributors
+
+- Thespielplatz <informatics@gmx.net>
+
 ## v1.0.0
 
 [compare changes](https://github.com/thespielplatz/nuxt-dev-base/compare/v0.0.1...v1.0.0)
