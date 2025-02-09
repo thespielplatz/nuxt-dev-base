@@ -1,1 +1,1 @@
-export const CONSOLA_PREFIX = 'Dev Base Module: '
+export const CONSOLA_PREFIX = '[Dev Base Module] '
