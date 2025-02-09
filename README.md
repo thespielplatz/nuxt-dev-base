@@ -116,9 +116,13 @@ jobs:
           fi          
 ```
 
-### Release Notes
+### Legal Notice loaded from data
 
-[✨ &nbsp;Release Notes](/CHANGELOG.md)
+If you want a simple legal notice in the footer with the content shown in an popup just create the file `data/legal-notice.html` and it will magicly appear.
+
+### Full Changelog
+
+[✨ &nbsp;Changelog](/CHANGELOG.md)
 
 ## Backlog
 
