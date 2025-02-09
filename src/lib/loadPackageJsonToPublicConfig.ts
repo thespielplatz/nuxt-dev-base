@@ -1,7 +1,5 @@
 import { readFileSync } from 'node:fs'
 import { join } from 'node:path'
-import type { Nuxt } from 'nuxt/schema'
-import defu from 'defu'
 import consola from 'consola'
 import { z } from 'zod'
 import { addConsolaPrefix } from './addConsolaPrefix'
@@ -14,7 +12,11 @@ const packageJsonSchema = z.object({
   homepage: z.string().optional(),
 })
 
-export default (nuxt: Nuxt) => {
+export default (): {
+  releasedVersion: string,
+  version: string,
+  githubLink: string,
+} => {
   const packageJsonPath = join(process.cwd(), 'package.json')
 
   let packageJsonContent
@@ -22,7 +24,7 @@ export default (nuxt: Nuxt) => {
     packageJsonContent = readFileSync(packageJsonPath, 'utf-8')
   } catch {
     consola.warn(addConsolaPrefix('Error loading package.json from path:'), packageJsonPath)
-    return
+    return createEmptyResult()
   }
 
   let packageJson
@@ -31,13 +33,21 @@ export default (nuxt: Nuxt) => {
     packageJson = packageJsonSchema.parse(json)
   } catch (error) {
     consola.warn(addConsolaPrefix('Error parsing package.json:'), error)
-    return
+    return createEmptyResult()
   }
 
-  nuxt.options.runtimeConfig.public = defu(nuxt.options.runtimeConfig.public, {
+  consola.info(addConsolaPrefix('Loaded infos from package.json'))
+  return {
     releasedVersion: packageJson.version,
     version: packageJson.meta?.['special-version'] || packageJson.version,
     githubLink: packageJson.homepage || '',
-  })
-  consola.info(addConsolaPrefix('Loaded infos from package.json'))
+  }
+}
+
+const createEmptyResult = () => {
+  return {
+    releasedVersion: 'no version',
+    version: 'no version',
+    githubLink: '',
+  }
 }
