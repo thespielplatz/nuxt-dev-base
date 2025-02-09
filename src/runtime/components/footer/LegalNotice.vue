@@ -33,7 +33,7 @@
 
 <script setup lang="ts">
 
-import { onMounted } from 'vue'
+import { useRuntimeConfig, ref, onMounted } from '#imports'
 
 const content = ref<null | string>(null)
 const isOpen = ref(false)

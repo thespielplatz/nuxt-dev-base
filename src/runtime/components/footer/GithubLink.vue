@@ -13,6 +13,8 @@
 
 <script setup lang="ts">
 
+import { ref, useRuntimeConfig } from '#imports'
+
 const runtimeConfig = useRuntimeConfig()
 const githubLink = ref(runtimeConfig.public.githubLink || '')
 

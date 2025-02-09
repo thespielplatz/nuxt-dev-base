@@ -24,6 +24,8 @@
 
 <script setup lang="ts">
 
+import { ref, useRuntimeConfig } from '#imports'
+
 const runtimeConfig = useRuntimeConfig()
 
 const version = ref(runtimeConfig.public.version ? `v${runtimeConfig.public.version}` : 'undefined')
