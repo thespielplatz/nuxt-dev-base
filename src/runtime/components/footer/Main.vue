@@ -13,12 +13,12 @@
         class="h-7 mt-1"
       />
     </FooterPrivacyPolicy>
-    <FooterGithubLink v-if="githubLink" />
-    <UDivider
-      v-if="githubLink"
-      orientation="vertical"
-      class="h-7 mt-1"
-    />
+    <FooterGithubLink>
+      <UDivider
+        orientation="vertical"
+        class="h-7 mt-1"
+      />
+    </FooterGithubLink>
     <FooterVersionBadge />
   </UContainer>
 </template>
@@ -26,6 +26,5 @@
 <script setup lang="ts">
 
 const runtimeConfig = useRuntimeConfig()
-const githubLink = ref(runtimeConfig.public.githubLink || '')
 
 </script>

@@ -1,5 +1,6 @@
 <template>
   <UButton
+    v-if="githubLink"
     variant="link"
     :to="githubLink"
     target="_blank"
@@ -7,6 +8,7 @@
   >
     <UIcon name="i-grommet-icons-github" /> Github
   </UButton>
+  <slot v-if="githubLink" />
 </template>
 
 <script setup lang="ts">
