@@ -116,9 +116,14 @@ jobs:
           fi          
 ```
 
-### Legal Notice loaded from data
+### Legal Pages loaded from data
 
-If you want a simple legal notice in the footer with the content shown in an popup just create the file `data/legal-notice.html` and it will magicly appear.
+If you want some legal pages simply shown in your footer, you can create the following files and the content will magicly appear in a popup:
+
+* `data/legal-notice.html`
+* `data/privacy-policy.html`
+
+FYI: You can easily mount the `/data` directory outside of your docker container ;)
 
 ### Full Changelog
 
