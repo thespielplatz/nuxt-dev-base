@@ -11,7 +11,7 @@
     <UCard :ui="{ ring: '', divide: 'divide-y divide-gray-100 dark:divide-gray-800' }">
       <template #header>
         <div class="flex items-center justify-between">
-          <h3 class="text-base font-semibold leading-6 text-gray-900 dark:text-white">
+          <h3 class="text-base text-lg font-semibold leading-6 text-gray-900 dark:text-white">
             Legal Notice
           </h3>
           <UButton
