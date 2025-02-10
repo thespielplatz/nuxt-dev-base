@@ -1,6 +1,5 @@
 import { z } from 'zod'
-import loadFileContentsFromData from '../../utils/loadFileContentsFromData'
-import { createError, defineEventHandler, getValidatedQuery, setHeader } from '#imports'
+import { createError, defineEventHandler, getValidatedQuery, setHeader, loadFileContentsFromData } from '#imports'
 
 const inputSchema = z.object({
   file: z.enum(['legal-notice', 'privacy-policy']),
