@@ -1,4 +1,4 @@
-import { defineNuxtModule, addPlugin, createResolver, addComponentsDir } from '@nuxt/kit'
+import { defineNuxtModule, addPlugin, createResolver, addComponentsDir, addServerScanDir } from '@nuxt/kit'
 import '@nuxt/schema'
 import type { Nuxt } from '@nuxt/schema'
 import defu from 'defu'
@@ -36,6 +36,7 @@ const registerAll = () => {
   addComponentsDir({
     path: resolve(runtimeDir, 'components'),
   })
+  addServerScanDir(resolve(runtimeDir, 'server'))
 }
 
 const addDataToPublicConfig = (nuxt: Nuxt) => {

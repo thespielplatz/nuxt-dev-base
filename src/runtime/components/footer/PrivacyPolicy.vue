@@ -33,17 +33,13 @@
 
 <script setup lang="ts">
 
-import { onMounted, ref, useRuntimeConfig } from '#imports'
+import { onMounted, ref } from '#imports'
 
 const content = ref<null | string>(null)
 const isOpen = ref(false)
 
-const runtimeConfig = useRuntimeConfig()
-
-onMounted(() => {
-  if (runtimeConfig.public.privacyPolicy) {
-    content.value = runtimeConfig.public.privacyPolicy
-  }
+onMounted(async () => {
+  content.value = await $fetch('api/dev-base/content?file=privacy-policy')
 })
 
 </script>

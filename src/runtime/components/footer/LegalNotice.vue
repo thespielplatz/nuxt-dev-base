@@ -33,17 +33,13 @@
 
 <script setup lang="ts">
 
-import { useRuntimeConfig, ref, onMounted } from '#imports'
+import { ref, onMounted } from '#imports'
 
 const content = ref<null | string>(null)
 const isOpen = ref(false)
 
-const runtimeConfig = useRuntimeConfig()
-
-onMounted(() => {
-  if (runtimeConfig.public.legalNotice) {
-    content.value = runtimeConfig.public.legalNotice
-  }
+onMounted(async () => {
+  content.value = await $fetch('api/dev-base/content?file=legal-notice')
 })
 
 </script>

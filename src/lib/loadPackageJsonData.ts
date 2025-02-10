@@ -5,11 +5,11 @@ import { z } from 'zod'
 import { addConsolaPrefix } from './addConsolaPrefix'
 
 const packageJsonSchema = z.object({
-  version: z.string().default('no version'),
+  version: z.string().default(''),
   meta: z.object({
-    'special-version': z.string().optional(),
+    'special-version': z.string().default(''),
   }).optional(),
-  homepage: z.string().optional(),
+  homepage: z.string().default(''),
 })
 
 export default (): {
@@ -46,8 +46,8 @@ export default (): {
 
 const createEmptyResult = () => {
   return {
-    releasedVersion: 'no version',
-    version: 'no version',
+    releasedVersion: '',
+    version: '',
     githubLink: '',
   }
 }
