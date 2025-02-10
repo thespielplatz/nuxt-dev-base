@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v1.0.5
+
+[compare changes](https://github.com/thespielplatz/nuxt-dev-base/compare/v1.0.4...v1.0.5)
+
+### 🩹 Fixes
+
+- #imports ([7363fc6](https://github.com/thespielplatz/nuxt-dev-base/commit/7363fc6))
+
+### ❤️ Contributors
+
+- Thespielplatz <informatics@gmx.net>
+
 ## v1.0.4
 
 [compare changes](https://github.com/thespielplatz/nuxt-dev-base/compare/v1.0.3...v1.0.4)
