@@ -1,6 +1,22 @@
 # Changelog
 
 
+## v1.0.3
+
+[compare changes](https://github.com/thespielplatz/nuxt-dev-base/compare/v1.0.2...v1.0.3)
+
+### 🩹 Fixes
+
+- Load legal pages via server api ([bbd616e](https://github.com/thespielplatz/nuxt-dev-base/commit/bbd616e))
+
+### 💅 Refactors
+
+- Define runtime interface for runtimeConfig devBase ([1f844be](https://github.com/thespielplatz/nuxt-dev-base/commit/1f844be))
+
+### ❤️ Contributors
+
+- Thespielplatz <informatics@gmx.net>
+
 ## v1.0.2
 
 [compare changes](https://github.com/thespielplatz/nuxt-dev-base/compare/v1.0.1...v1.0.2)
