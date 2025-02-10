@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v1.0.4
+
+[compare changes](https://github.com/thespielplatz/nuxt-dev-base/compare/v1.0.3...v1.0.4)
+
+### 💅 Refactors
+
+- File export schema ([fd57ee1](https://github.com/thespielplatz/nuxt-dev-base/commit/fd57ee1))
+
+### ❤️ Contributors
+
+- Thespielplatz <informatics@gmx.net>
+
 ## v1.0.3
 
 [compare changes](https://github.com/thespielplatz/nuxt-dev-base/compare/v1.0.2...v1.0.3)
