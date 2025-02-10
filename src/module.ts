@@ -1,29 +1,28 @@
 import { defineNuxtModule, addPlugin, createResolver, addComponentsDir } from '@nuxt/kit'
-import consola from 'consola'
 import '@nuxt/schema'
 import type { Nuxt } from '@nuxt/schema'
 import defu from 'defu'
-import loadPackageJsonToPublicConfig from './lib/loadPackageJsonToPublicConfig'
-import loadLegalPagesToPublicConfig from './lib/loadLegalPagesToPublicConfig'
-import { addConsolaPrefix } from './lib/addConsolaPrefix'
+import loadPackageJsonData from './lib/loadPackageJsonData'
 
-// Module options TypeScript interface definition
-// eslint-disable-next-line @typescript-eslint/no-empty-object-type
-export interface ModuleOptions {}
-
-const defaults: ModuleOptions = {
+declare module '@nuxt/schema' {
+  interface PublicRuntimeConfig {
+    devBase: InternalOptions
+  }
 }
 
-export default defineNuxtModule<ModuleOptions>({
+export interface InternalOptions {
+  releasedVersion: string | null,
+  version: string | null,
+  githubLink: string | null,
+}
+
+export default defineNuxtModule({
   meta: {
     name: 'nuxt-dev-base',
     configKey: 'nuxtDevBase',
   },
   // Default configuration options of the Nuxt module
-  defaults,
   setup(options, nuxt) {
-    consola.info(addConsolaPrefix('Setup'))
-
     registerAll()
     addDataToPublicConfig(nuxt)
   },
@@ -40,12 +39,10 @@ const registerAll = () => {
 }
 
 const addDataToPublicConfig = (nuxt: Nuxt) => {
-  const packageJsonData = loadPackageJsonToPublicConfig()
-  const legalPagesData = loadLegalPagesToPublicConfig()
+  const packageJsonData = loadPackageJsonData()
 
-  nuxt.options.runtimeConfig.public = defu(
-    nuxt.options.runtimeConfig.public,
+  nuxt.options.runtimeConfig.public.devBase = defu(
+    nuxt.options.runtimeConfig.public.devBase,
     packageJsonData,
-    legalPagesData,
   )
 }

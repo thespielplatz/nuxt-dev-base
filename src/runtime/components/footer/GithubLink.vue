@@ -1,21 +1,20 @@
 <template>
   <UButton
-    v-if="githubLink"
+    v-if="runtimeConfig.public.devBase.githubLink"
     variant="link"
-    :to="githubLink"
+    :to="runtimeConfig.public.devBase.githubLink"
     target="_blank"
     class="flex items-center gap-1"
   >
     <UIcon name="i-grommet-icons-github" /> Github
   </UButton>
-  <slot v-if="githubLink" />
+  <slot v-if="runtimeConfig.public.devBase.githubLink" />
 </template>
 
 <script setup lang="ts">
 
-import { ref, useRuntimeConfig } from '#imports'
+import { useRuntimeConfig } from '#imports'
 
 const runtimeConfig = useRuntimeConfig()
-const githubLink = ref(runtimeConfig.public.githubLink || '')
 
 </script>

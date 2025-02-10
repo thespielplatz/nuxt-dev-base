@@ -28,8 +28,8 @@ import { ref, useRuntimeConfig } from '#imports'
 
 const runtimeConfig = useRuntimeConfig()
 
-const version = ref(runtimeConfig.public.version ? `v${runtimeConfig.public.version}` : 'undefined')
-const releasedVersion = ref(runtimeConfig.public.releasedVersion ? `v${runtimeConfig.public.releasedVersion}` : 'undefined')
-const tagLink = ref(runtimeConfig.public.githubLink ? `${runtimeConfig.public.githubLink}/releases/tag/${releasedVersion.value}` : '')
+const version = ref(runtimeConfig.public.devBase.version ? `v${runtimeConfig.public.devBase.version}` : 'undefined')
+const releasedVersion = ref(runtimeConfig.public.devBase.releasedVersion ? `v${runtimeConfig.public.devBase.releasedVersion}` : 'undefined')
+const tagLink = ref(runtimeConfig.public.devBase.githubLink ? `${runtimeConfig.public.devBase.githubLink}/releases/tag/${releasedVersion.value}` : '')
 
 </script>
