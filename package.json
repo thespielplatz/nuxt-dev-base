@@ -12,7 +12,7 @@
   "type": "module",
   "workspaces": [
     "playground"
-  ],  
+  ],
   "meta": {
     "special-version": "0.0.1-for-testing"
   },
@@ -42,6 +42,8 @@
   "dependencies": {
     "@nuxt/kit": "^3.15.4",
     "@nuxt/ui": "^2.21.0",
+    "consola": "^3.4.0",
+    "defu": "^6.1.4",
     "zod": "^3.24.2"
   },
   "devDependencies": {
