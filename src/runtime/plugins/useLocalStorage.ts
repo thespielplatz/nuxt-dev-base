@@ -1,4 +1,5 @@
 import { defineNuxtPlugin } from '#imports'
+
 export interface Storage {
   exists(key: string): boolean
   getItem(key: string): string | null
