@@ -10,6 +10,9 @@
   "license": "MIT",
   "private": false,
   "type": "module",
+  "workspaces": [
+    "playground"
+  ],  
   "meta": {
     "special-version": "0.0.1-for-testing"
   },
@@ -38,24 +41,21 @@
   },
   "dependencies": {
     "@nuxt/kit": "^3.15.4",
-    "zod": "^3.24.1"
+    "@nuxt/ui": "^2.21.0",
+    "zod": "^3.24.2"
   },
   "devDependencies": {
-    "@nuxt/devtools": "^1.7.0",
-    "@nuxt/eslint-config": "^0.7.5",
+    "@nuxt/devtools": "^2.0.0",
+    "@nuxt/eslint-config": "^1.0.1",
     "@nuxt/module-builder": "^0.8.4",
-    "@nuxt/schema": "^3.15.2",
+    "@nuxt/schema": "^3.15.4",
     "@nuxt/test-utils": "^3.15.4",
     "@types/node": "latest",
     "changelogen": "^0.5.7",
-    "eslint": "^9.18.0",
-    "nuxt": "^3.15.2",
+    "eslint": "^9.20.1",
+    "nuxt": "^3.15.4",
     "typescript": "~5.7.3",
     "vitest": "^3.0.5",
     "vue-tsc": "^2.2.0"
-  },
-  "peerDependencies": {
-    "consola": "^3.3.3",
-    "defu": "^6.1.4"
   }
 }
