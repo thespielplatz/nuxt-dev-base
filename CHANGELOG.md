@@ -1,6 +1,38 @@
 # Changelog
 
 
+## v1.0.6
+
+[compare changes](https://github.com/thespielplatz/nuxt-dev-base/compare/v1.0.5...v1.0.6)
+
+### 🩹 Fixes
+
+- Add missing packages ([f00ee39](https://github.com/thespielplatz/nuxt-dev-base/commit/f00ee39))
+
+### 💅 Refactors
+
+- **playground:** Install nuxt module via package dependency ([baf5dd1](https://github.com/thespielplatz/nuxt-dev-base/commit/baf5dd1))
+- **nitro:** Refactor nitro imports ([79dfe35](https://github.com/thespielplatz/nuxt-dev-base/commit/79dfe35))
+
+### 📖 Documentation
+
+- Update install ([f7279e7](https://github.com/thespielplatz/nuxt-dev-base/commit/f7279e7))
+
+### 📦 Build
+
+- **deps:** Bump koa from 2.15.3 to 2.15.4 in /playground ([6905093](https://github.com/thespielplatz/nuxt-dev-base/commit/6905093))
+
+### 🏡 Chore
+
+- Npm i ([d325dd0](https://github.com/thespielplatz/nuxt-dev-base/commit/d325dd0))
+- Remove template plugin ([981b691](https://github.com/thespielplatz/nuxt-dev-base/commit/981b691))
+- **playground:** Add ts type for LocalStoragePlugin ([c212511](https://github.com/thespielplatz/nuxt-dev-base/commit/c212511))
+- Eslint fix ([f9b3a83](https://github.com/thespielplatz/nuxt-dev-base/commit/f9b3a83))
+
+### ❤️ Contributors
+
+- Thespielplatz <informatics@gmx.net>
+
 ## v1.0.5
 
 [compare changes](https://github.com/thespielplatz/nuxt-dev-base/compare/v1.0.4...v1.0.5)
