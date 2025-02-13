@@ -16,7 +16,7 @@ Development starter for doing amazing things.
 Install the module to your Nuxt application with one command:
 
 ```bash
-npm i -D @thespielplatz/nuxt-dev-base
+npm i @thespielplatz/nuxt-dev-base
 npx nuxi@latest module add ui
 ```
 
