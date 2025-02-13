@@ -1,4 +1,10 @@
 import { defineNuxtPlugin } from '#imports'
+export interface Storage {
+  exists(key: string): boolean
+  getItem(key: string): string | null
+  setItem(key: string, value: string): void
+  removeItem(key: string): void
+}
 
 const exists = (key: string): boolean => {
   return localStorage.getItem(key) != null
@@ -31,7 +37,11 @@ const create = (prefix?: string) => {
   }
 }
 
-const localStoragePlugin = {
+export interface LocalStoragePlugin {
+  create: (prefix: string) => Storage;
+}
+
+const localStoragePlugin: LocalStoragePlugin & Storage = {
   ...create(),
   create,
 }
