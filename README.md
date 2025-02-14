@@ -77,7 +77,7 @@ watch(fooBar2, (value) => {
 
 ### Simple Footer with Gitversion
 
-You can use the `<FooterMain />`component to have an automatical footer in your project.
+You can use the `<FooterMain />`component to have an automatical footer in your project. See the playground project too "how it looks like".
 
 Example `package.json`:
 
@@ -101,6 +101,8 @@ Example `package.json`:
 WORKDIR /app
 COPY package.json /app
 ```
+
+- Example Dockerfile: [See](docs/examples/Dockerfile)
 
 #### Configuration of Github Actions
 
@@ -138,6 +140,8 @@ jobs:
           fi          
 ```
 
+
+
 ### Legal Pages loaded from data
 
 If you want some legal pages simply shown in your footer, you can create the following files and the content will magicly appear in a popup:
@@ -165,6 +169,10 @@ npm run dev
 Experiment with the module in the playground environment 🎉
 
 _(Inspired by the [Nuxt module guide](https://nuxt.com/docs/guide/going-further/modules))_
+
+### Dev Notes
+
+CI & CD ideas can be found [here](docs/CI_CD.md).
 
 ## Support
 
