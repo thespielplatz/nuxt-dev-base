@@ -84,3 +84,37 @@ The deploy user can call the script with:
 ```bash
 sudo /root/your-project/update.sh
 ```
+
+## Trigger a release via NPM script
+
+### Setup
+
+```json
+{
+  // ...
+  "scripts": {
+    // ...
+    "lint": "eslint . --max-warnings=0",
+    "bump-version": "npm run lint && npx changelogen@latest --release && git push --follow-tags"
+  },
+  // ...
+  "devDependencies": {
+    // ...
+    "@nuxt/eslint-config": "^1.0.1",
+    "changelogen": "^0.5.7",
+    "eslint": "^9.20.0"
+  }
+}
+```
+
+See [eslint.config.mjs](examples/eslint.config.mjs) for nuxt.
+
+### Run
+
+```bash
+npm run bump-version
+```
+
+- You browser will open in background, but wait until the git push has finished, otherwise you will have two tags 🙈
+- Click the release button on the github page
+- The action will run
