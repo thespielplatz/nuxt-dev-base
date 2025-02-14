@@ -118,3 +118,7 @@ npm run bump-version
 - You browser will open in background, but wait until the git push has finished, otherwise you will have two tags 🙈
 - Click the release button on the github page
 - The action will run
+
+## Trigger a build via commit
+
+Add `RUN_PIPELINE` into the commit message and the action will run and will create a docker tag `IMAGE_TAG:vX.X.X-{short-commit-hash}`.
