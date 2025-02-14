@@ -1,6 +1,11 @@
 # Github Actions
 
-There are two options for choosing a Docker registry when publishing a Docker image:
+The Github actions run, if
+
+- a release happend in github and the docker tag will be `DOCKER_IMAGE/vX.X.X`
+- or a commit containes the string `RUN_PIPELINE` and the docker tag will be `DOCKER_IMAGE/vX.X.X-{short-commit-hash}`
+
+There are two action file when publishing a Docker image:
 
 - **Using** [hub.docker.com](http://hub.docker.com) as registry
 - **Using a self hosted** [registry](https://hub.docker.com/_/registry)

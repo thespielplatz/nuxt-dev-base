@@ -1,10 +1,15 @@
-# Development
+# Continous Integration and Continous Delivery
 
 ## Dockerbuild
 
 See [Dockerfile](examples/Dockerfile)
 
 ## Github Actions
+
+The Github actions run, if
+
+- a release happend in github and the docker tag will be `DOCKER_IMAGE/vX.X.X`
+- or a commit containes the string `RUN_PIPELINE` and the docker tag will be `DOCKER_IMAGE/vX.X.X-{short-commit-hash}`
 
 See [Github Actions](github-actions/README.md)
 
