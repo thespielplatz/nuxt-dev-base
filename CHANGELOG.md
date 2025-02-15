@@ -1,6 +1,26 @@
 # Changelog
 
 
+## v1.1.0
+
+[compare changes](https://github.com/thespielplatz/nuxt-dev-base/compare/v1.0.6...v1.1.0)
+
+### 🚀 Enhancements
+
+- **server:** Add isDevelopmentMode util ([2c91937](https://github.com/thespielplatz/nuxt-dev-base/commit/2c91937))
+
+### 📖 Documentation
+
+- Update readme with example docker build files ([afaf54f](https://github.com/thespielplatz/nuxt-dev-base/commit/afaf54f))
+- Add CI CD idea ([206732b](https://github.com/thespielplatz/nuxt-dev-base/commit/206732b))
+- Add a basic github action description ([499ee48](https://github.com/thespielplatz/nuxt-dev-base/commit/499ee48))
+- Add Trigger a release via NPM script ([c0d8f0d](https://github.com/thespielplatz/nuxt-dev-base/commit/c0d8f0d))
+- Add Trigger a build via commit ([319e111](https://github.com/thespielplatz/nuxt-dev-base/commit/319e111))
+
+### ❤️ Contributors
+
+- Thespielplatz <informatics@gmx.net>
+
 ## v1.0.6
 
 [compare changes](https://github.com/thespielplatz/nuxt-dev-base/compare/v1.0.5...v1.0.6)
