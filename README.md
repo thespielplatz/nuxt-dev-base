@@ -140,7 +140,12 @@ jobs:
           fi          
 ```
 
+### Server Util: `isDevelopmentMode()`
 
+```typescript
+  const developmentMode = isDevelopmentMode()
+  consola.info(`Development mode: ${developmentMode ? 'enabled' : 'disabled'}`)
+```
 
 ### Legal Pages loaded from data
 
