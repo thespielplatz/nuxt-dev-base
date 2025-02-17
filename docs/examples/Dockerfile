@@ -4,6 +4,9 @@ ARG NODE_VERSION=22.11.0
 
 FROM node:${NODE_VERSION}-slim AS base
 
+# Install Git only if package.json contains dependencies that require it (e.g., dependencies with 'git+' URLs)
+RUN if grep -q 'git+' package.json; then apt-get update && apt-get install -y git; fi
+
 ARG PORT=3000
 
 ENV NODE_ENV=production
