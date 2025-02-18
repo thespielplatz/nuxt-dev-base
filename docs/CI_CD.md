@@ -54,6 +54,7 @@ nano update.sh
 ```
 
 ```bash
+cd /root/your-project
 docker compose pull
 docker compose down
 docker compose up -d
