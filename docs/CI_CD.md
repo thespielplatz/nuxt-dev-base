@@ -66,10 +66,10 @@ docker compose up -d
 chmod +x update.sh
 ```
 
-- Edit the sudoers file using visudo:
+- Create a new file: `/etc/sudoers.d/update-scripts`
 
 ```bash
-sudo visudo
+nano /etc/sudoers.d/update-scripts
 ```
 
 - Add line for your deploy user
@@ -86,7 +86,7 @@ The deploy user can call the script with:
 sudo /root/your-project/update.sh
 ```
 
-## Trigger a release via NPM script
+## Bump Version & Release
 
 ### Setup
 
