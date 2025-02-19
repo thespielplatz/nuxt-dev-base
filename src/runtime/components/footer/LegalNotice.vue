@@ -24,7 +24,7 @@ import { ref, onMounted } from '#imports'
 const content = ref<null | string>(null)
 
 onMounted(async () => {
-  content.value = await $fetch('/api/dev-base/content?file=legal-notice')
+  content.value = await $fetch<string>('/api/dev-base/content?file=legal-notice')
 })
 
 </script>
