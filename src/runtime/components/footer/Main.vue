@@ -1,23 +1,14 @@
 <template>
-  <UDivider class="mt-auto pt-2" />
-  <UContainer class="w-full flex justify-end py-2 gap-">
+  <div class="border-t border-gray-500 w-full" />
+  <UContainer class="w-full flex justify-end py-2 gap- items-center">
     <FooterLegalNotice>
-      <UDivider
-        orientation="vertical"
-        class="h-7 mt-1"
-      />
+      <div class="border-r border-gray-400 h-6" />
     </FooterLegalNotice>
     <FooterPrivacyPolicy>
-      <UDivider
-        orientation="vertical"
-        class="h-7 mt-1"
-      />
+      <div class="border-r border-gray-400 h-6" />
     </FooterPrivacyPolicy>
     <FooterGithubLink>
-      <UDivider
-        orientation="vertical"
-        class="h-7 mt-1"
-      />
+      <div class="border-r border-gray-400 h-6" />
     </FooterGithubLink>
     <FooterVersionBadge />
   </UContainer>

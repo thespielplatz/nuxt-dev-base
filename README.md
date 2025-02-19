@@ -17,7 +17,6 @@ Install the module to your Nuxt application with one command:
 
 ```bash
 npm i @thespielplatz/nuxt-dev-base
-npx nuxi@latest module add ui
 ```
 
 Edit Add it to the `modules` section in your `nuxt.config.ts`:
@@ -26,10 +25,11 @@ Edit Add it to the `modules` section in your `nuxt.config.ts`:
 export default defineNuxtConfig({
   modules: [
     '@thespielplatz/nuxt-dev-base',
-    '@nuxt/ui',
   ],
 })
 ```
+
+Follow the install guide on nuxtui: https://ui3.nuxt.dev/getting-started
 
 That's it! You can now use Nuxt Dev Base in your Nuxt app ✨
 

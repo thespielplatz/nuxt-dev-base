@@ -4,7 +4,8 @@
     variant="link"
     :to="runtimeConfig.public.devBase.githubLink"
     target="_blank"
-    class="flex items-center gap-1"
+    class="flex items-center gap-1 hover:underline"
+    color="neutral"
   >
     <UIcon name="i-grommet-icons-github" /> Github
   </UButton>

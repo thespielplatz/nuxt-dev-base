@@ -4,18 +4,17 @@
     :to="tagLink"
     target="_blank"
     variant="link"
-    class="text-white"
   >
     <UBadge
-      :ui="{ rounded: 'rounded-full' }"
-      class="px-2"
+      variant="outline"
+      color="neutral"
+      class="px-2 rounded-full"
     >
       {{ version }}
     </UBadge>
   </UButton>
   <UBadge
     v-else
-    :ui="{ rounded: 'rounded-full' }"
     class="px-2"
   >
     {{ version }}
