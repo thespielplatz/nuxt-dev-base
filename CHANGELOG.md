@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v1.2.1
+
+[compare changes](https://github.com/thespielplatz/nuxt-dev-base/compare/v1.2.0...v1.2.1)
+
+### 🩹 Fixes
+
+- Adjust colors ([b27b7e7](https://github.com/thespielplatz/nuxt-dev-base/commit/b27b7e7))
+
+### ❤️ Contributors
+
+- Thespielplatz <informatics@gmx.net>
+
 ## v1.2.0
 
 [compare changes](https://github.com/thespielplatz/nuxt-dev-base/compare/v1.1.0...v1.2.0)
