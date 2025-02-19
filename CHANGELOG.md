@@ -1,6 +1,29 @@
 # Changelog
 
 
+## v1.2.0
+
+[compare changes](https://github.com/thespielplatz/nuxt-dev-base/compare/v1.1.0...v1.2.0)
+
+### 🚀 Enhancements
+
+- Update to nuxtui 3.0 ([02b11ed](https://github.com/thespielplatz/nuxt-dev-base/commit/02b11ed))
+
+### 🩹 Fixes
+
+- **content:** Add return types for $fetch ([f125a26](https://github.com/thespielplatz/nuxt-dev-base/commit/f125a26))
+
+### 📖 Documentation
+
+- **ci:** Add auto git install, if package json contains a git+ dependency ([3558ee1](https://github.com/thespielplatz/nuxt-dev-base/commit/3558ee1))
+- **ci/id:** Update CI_CD.md ([90b406a](https://github.com/thespielplatz/nuxt-dev-base/commit/90b406a))
+- Update sudo configuration for update-script ([8df8f2a](https://github.com/thespielplatz/nuxt-dev-base/commit/8df8f2a))
+
+### ❤️ Contributors
+
+- Thespielplatz <informatics@gmx.net>
+- TheSpielplatz <informatics@gmx.net>
+
 ## v1.1.0
 
 [compare changes](https://github.com/thespielplatz/nuxt-dev-base/compare/v1.0.6...v1.1.0)
