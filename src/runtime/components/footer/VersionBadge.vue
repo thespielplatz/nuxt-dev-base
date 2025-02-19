@@ -8,7 +8,7 @@
     <UBadge
       variant="outline"
       color="neutral"
-      class="px-2 rounded-full"
+      class="px-2 rounded-full bg-transparent"
     >
       {{ version }}
     </UBadge>
