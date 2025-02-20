@@ -1,6 +1,28 @@
 # Changelog
 
 
+## v1.2.2
+
+[compare changes](https://github.com/thespielplatz/nuxt-dev-base/compare/v1.2.1...v1.2.2)
+
+### 🩹 Fixes
+
+- Remove footer color adding via module.ts and wirte docs how todo it by hand ([f688ca6](https://github.com/thespielplatz/nuxt-dev-base/commit/f688ca6))
+- **playground:** Custom theme colors ([95402b6](https://github.com/thespielplatz/nuxt-dev-base/commit/95402b6))
+- **vitest:** Exclude custom css import, when test runs ([71b2396](https://github.com/thespielplatz/nuxt-dev-base/commit/71b2396))
+
+### 💅 Refactors
+
+- Add new footer color to tailwind & nuxtui ([062d22c](https://github.com/thespielplatz/nuxt-dev-base/commit/062d22c))
+
+### 🏡 Chore
+
+- Remove unused import statement ([c60ad09](https://github.com/thespielplatz/nuxt-dev-base/commit/c60ad09))
+
+### ❤️ Contributors
+
+- Thespielplatz <informatics@gmx.net>
+
 ## v1.2.1
 
 [compare changes](https://github.com/thespielplatz/nuxt-dev-base/compare/v1.2.0...v1.2.1)
