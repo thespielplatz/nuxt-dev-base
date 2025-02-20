@@ -7,8 +7,8 @@
   >
     <UBadge
       variant="outline"
-      color="neutral"
-      class="px-2 rounded-full bg-transparent"
+      color="footer"
+      class="px-2 rounded-full bg-transparent hover:text-[var(--ui-footer-hover)]"
     >
       {{ version }}
     </UBadge>

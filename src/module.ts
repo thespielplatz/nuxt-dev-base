@@ -2,6 +2,7 @@ import { defineNuxtModule, addPlugin, createResolver, addComponentsDir, addServe
 import '@nuxt/schema'
 import type { Nuxt } from '@nuxt/schema'
 import defu from 'defu'
+import consola from 'consola'
 import loadPackageJsonData from './lib/loadPackageJsonData'
 
 declare module '@nuxt/schema' {
@@ -25,6 +26,8 @@ export default defineNuxtModule({
   setup(options, nuxt) {
     registerAll()
     addDataToPublicConfig(nuxt)
+    addFooterColorToNuxtUI(nuxt)
+    addCustomerCssFile(nuxt)
   },
 })
 
@@ -46,4 +49,27 @@ const addDataToPublicConfig = (nuxt: Nuxt) => {
     nuxt.options.runtimeConfig.public.devBase,
     packageJsonData,
   )
+}
+
+const addFooterColorToNuxtUI = (nuxt: Nuxt) => {
+  const options = defu(nuxt.options, {
+    ui: {
+      theme: {
+        colors: [
+          'error', 'footer',
+        ],
+      },
+    },
+  })
+
+  nuxt.options = options
+  consola.info('Added \'footer\' color to Nuxt UI theme colors: Resulting colors:', options.ui.theme.colors)
+}
+
+const addCustomerCssFile = (nuxt: Nuxt) => {
+  const { resolve } = createResolver(import.meta.url)
+  const runtimeDir = resolve('./runtime')
+
+  nuxt.options.css = nuxt.options.css || []
+  nuxt.options.css.push(resolve(runtimeDir, 'styles.css'))
 }

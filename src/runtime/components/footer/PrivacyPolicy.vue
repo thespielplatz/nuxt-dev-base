@@ -3,7 +3,7 @@
     <UButton
       v-if="content"
       variant="link"
-      color="neutral"
+      color="footer"
       class="hover:underline"
     >
       Privacy Policy

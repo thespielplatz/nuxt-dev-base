@@ -1,0 +1,27 @@
+@import "tailwindcss";
+@import "@nuxt/ui";
+
+@theme {
+  --color-footer-50: #f9fafb;
+  --color-footer-100: #f3f4f6;
+  --color-footer-200: #e5e7eb;
+  --color-footer-300: #d1d5db;
+  --color-footer-400: #9ca3af;
+  --color-footer-500: #6b7280;
+  --color-footer-600: #4b5563;
+  --color-footer-700: #374151;
+  --color-footer-800: #1f2937;
+  --color-footer-900: #111827;
+  --color-footer-950: #030712;
+
+  --ui-footer: var(--color-footer-500);
+  --ui-footer-hover: var(--color-footer-800);
+}
+
+.hover\:text-\(--ui-footer\)\/75 {
+  &:hover {
+    @media (hover: hover) {
+      color: color-mix(in oklab, var(--ui-footer-hover) 100%, transparent);
+    }
+  }
+}

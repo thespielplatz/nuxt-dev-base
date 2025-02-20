@@ -3,7 +3,7 @@
     <UButton
       v-if="content != null"
       variant="link"
-      color="neutral"
+      color="footer"
       class="hover:underline"
     >
       Legal Notice
