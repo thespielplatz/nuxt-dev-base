@@ -13,13 +13,13 @@ Development starter for doing amazing things.
 
 ## Quick Setup
 
-Install the module to your Nuxt application with one command:
+- Install the module to your Nuxt application with one command:
 
 ```bash
 npm i @thespielplatz/nuxt-dev-base
 ```
 
-Edit Add it to the `modules` section in your `nuxt.config.ts`:
+- Edit Add it to the `modules` section in your `nuxt.config.ts`:
 
 ```typescript
 export default defineNuxtConfig({
@@ -29,7 +29,19 @@ export default defineNuxtConfig({
 })
 ```
 
-Follow the install guide on nuxtui: https://ui3.nuxt.dev/getting-started
+- Follow the install guide on nuxtui: https://ui3.nuxt.dev/getting-started
+
+- Add the custom color `footer` to nuxtui in your `nuxt.config.ts`:
+
+```typescript
+export default defineNuxtConfig({
+  ui: {
+    theme: {
+      colors: ['primary', 'secondary', 'tertiary', 'info', 'success', 'warning', 'error'],
+    },
+  },
+})
+```
 
 That's it! You can now use Nuxt Dev Base in your Nuxt app ✨
 

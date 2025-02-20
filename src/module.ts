@@ -26,7 +26,6 @@ export default defineNuxtModule({
   setup(options, nuxt) {
     registerAll()
     addDataToPublicConfig(nuxt)
-    addFooterColorToNuxtUI(nuxt)
     addCustomerCssFile(nuxt)
   },
 })
@@ -49,21 +48,6 @@ const addDataToPublicConfig = (nuxt: Nuxt) => {
     nuxt.options.runtimeConfig.public.devBase,
     packageJsonData,
   )
-}
-
-const addFooterColorToNuxtUI = (nuxt: Nuxt) => {
-  const options = defu(nuxt.options, {
-    ui: {
-      theme: {
-        colors: [
-          'error', 'footer',
-        ],
-      },
-    },
-  })
-
-  nuxt.options = options
-  consola.info('Added \'footer\' color to Nuxt UI theme colors: Resulting colors:', options.ui.theme.colors)
 }
 
 const addCustomerCssFile = (nuxt: Nuxt) => {
