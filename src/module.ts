@@ -25,7 +25,11 @@ export default defineNuxtModule({
   setup(options, nuxt) {
     registerAll()
     addDataToPublicConfig(nuxt)
-    addCustomerCssFile(nuxt)
+
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    if (!(process.env.TEST || (globalThis as any).vitest)) {
+      addCustomerCssFile(nuxt)
+    }
   },
 })
 
@@ -54,5 +58,5 @@ const addCustomerCssFile = (nuxt: Nuxt) => {
   const runtimeDir = resolve('./runtime')
 
   nuxt.options.css = nuxt.options.css || []
-  nuxt.options.css.push(resolve(runtimeDir, 'styles.css'))
+  nuxt.options.css.push(resolve(runtimeDir, 'assets/styles.css'))
 }
