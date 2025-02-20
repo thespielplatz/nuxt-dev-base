@@ -2,7 +2,6 @@ import { defineNuxtModule, addPlugin, createResolver, addComponentsDir, addServe
 import '@nuxt/schema'
 import type { Nuxt } from '@nuxt/schema'
 import defu from 'defu'
-import consola from 'consola'
 import loadPackageJsonData from './lib/loadPackageJsonData'
 
 declare module '@nuxt/schema' {
