@@ -1,6 +1,19 @@
 # Changelog
 
 
+## v1.2.3
+
+[compare changes](https://github.com/thespielplatz/nuxt-dev-base/compare/v1.2.2...v1.2.3)
+
+### 🏡 Chore
+
+- **nuxt/ui:** Update to 3.0.0-beta.2 ([07dfe32](https://github.com/thespielplatz/nuxt-dev-base/commit/07dfe32))
+- Update nuxt and nuxtui ([d2eacc9](https://github.com/thespielplatz/nuxt-dev-base/commit/d2eacc9))
+
+### ❤️ Contributors
+
+- Thespielplatz <informatics@gmx.net>
+
 ## v1.2.2
 
 [compare changes](https://github.com/thespielplatz/nuxt-dev-base/compare/v1.2.1...v1.2.2)
