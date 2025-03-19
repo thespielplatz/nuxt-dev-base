@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v1.2.4
+
+[compare changes](https://github.com/thespielplatz/nuxt-dev-base/compare/v1.2.3...v1.2.4)
+
+### 🏡 Chore
+
+- Npm audit fix of parse-git-config ([f935178](https://github.com/thespielplatz/nuxt-dev-base/commit/f935178))
+
+### ❤️ Contributors
+
+- Thespielplatz <informatics@gmx.net>
+
 ## v1.2.3
 
 [compare changes](https://github.com/thespielplatz/nuxt-dev-base/compare/v1.2.2...v1.2.3)
