@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@thespielplatz/nuxt-dev-base": "file:../",
+    "consola": "^3.4.2",
     "nuxt": "^3.16.0"
   }
 }
